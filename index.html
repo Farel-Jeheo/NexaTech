@@ -1,0 +1,1808 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexaTech — Future of Technology</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#" class="logo-wrap">
+        <svg
+          class="logo-icon"
+          viewBox="0 0 42 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient
+              id="lg1"
+              x1="0"
+              y1="0"
+              x2="42"
+              y2="42"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" stop-color="#00e5ff" />
+              <stop offset="60%" stop-color="#7b5cfa" />
+              <stop offset="100%" stop-color="#ff3d6b" />
+            </linearGradient>
+            <linearGradient
+              id="lg_bg"
+              x1="0"
+              y1="0"
+              x2="42"
+              y2="42"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.12" />
+              <stop offset="100%" stop-color="#7b5cfa" stop-opacity="0.18" />
+            </linearGradient>
+            <filter id="glow1">
+              <feGaussianBlur stdDeviation="1.2" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <rect
+            x="2"
+            y="2"
+            width="38"
+            height="38"
+            rx="11"
+            fill="url(#lg_bg)"
+            stroke="url(#lg1)"
+            stroke-width="1.2"
+            opacity="0.9"
+          />
+          <line
+            x1="2"
+            y1="14"
+            x2="40"
+            y2="14"
+            stroke="url(#lg1)"
+            stroke-width="0.3"
+            opacity="0.3"
+          />
+          <line
+            x1="2"
+            y1="28"
+            x2="40"
+            y2="28"
+            stroke="url(#lg1)"
+            stroke-width="0.3"
+            opacity="0.3"
+          />
+          <line
+            x1="14"
+            y1="2"
+            x2="14"
+            y2="40"
+            stroke="url(#lg1)"
+            stroke-width="0.3"
+            opacity="0.3"
+          />
+          <line
+            x1="28"
+            y1="2"
+            x2="28"
+            y2="40"
+            stroke="url(#lg1)"
+            stroke-width="0.3"
+            opacity="0.3"
+          />
+          <path
+            d="M11 30V12L21 27V12M21 27V30"
+            stroke="url(#lg1)"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            filter="url(#glow1)"
+          />
+          <path
+            d="M21 12L31 30V12"
+            stroke="url(#lg1)"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            filter="url(#glow1)"
+          />
+          <circle cx="6" cy="6" r="1.5" fill="#00e5ff" opacity="0.8" />
+          <circle cx="36" cy="6" r="1.5" fill="#7b5cfa" opacity="0.8" />
+          <circle cx="6" cy="36" r="1.5" fill="#7b5cfa" opacity="0.8" />
+          <circle cx="36" cy="36" r="1.5" fill="#ff3d6b" opacity="0.8" />
+        </svg>
+        <span class="logo-name">NexaTech</span>
+      </a>
+
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul id="navMenu">
+        <li><a href="#services" onclick="closeNav()">Layanan</a></li>
+        <li><a href="#features" onclick="closeNav()">Fitur</a></li>
+        <li><a href="#pricing" onclick="closeNav()">Harga</a></li>
+        <li><a href="#contact" onclick="closeNav()">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-orb orb3"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <div class="badge-dot"></div>
+          Platform Teknologi Masa Depan
+        </div>
+        <h1>
+          <span class="h1-line1">Inovasi Tanpa Batas,</span>
+          <span class="h1-gradient">Solusi Digital Terdepan</span>
+        </h1>
+        <p class="hero-desc">
+          NexaTech menghadirkan teknologi AI terkini, cloud computing mutakhir,
+          dan solusi digital yang mengubah cara bisnis Anda berkembang di era
+          modern.
+        </p>
+        <div class="hero-actions">
+          <a href="#" class="btn-primary">
+            Mulai Sekarang
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M3 8h10M9 4l4 4-4 4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a href="#features" class="btn-secondary">
+            Lihat Demo
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M8 3v5.5l3 1.8"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <circle
+                cx="8"
+                cy="8"
+                r="5.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-target="500">0</span>
+            <span class="stat-label">Klien Aktif</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="99.9">0</span>
+            <span class="stat-label">% Uptime</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="24">0</span>
+            <span class="stat-label">/7 Support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-section">
+      <div class="marquee-track">
+        <div class="marquee-item">
+          Artificial Intelligence <span class="sep">✦</span>
+        </div>
+        <div class="marquee-item">
+          Machine Learning <span class="sep">✦</span>
+        </div>
+        <div class="marquee-item">
+          Cloud Computing <span class="sep">✦</span>
+        </div>
+        <div class="marquee-item">Cybersecurity <span class="sep">✦</span></div>
+        <div class="marquee-item">IoT Solutions <span class="sep">✦</span></div>
+        <div class="marquee-item">Blockchain <span class="sep">✦</span></div>
+        <div class="marquee-item">
+          Data Analytics <span class="sep">✦</span>
+        </div>
+        <div class="marquee-item">DevOps <span class="sep">✦</span></div>
+        <div class="marquee-item">
+          Artificial Intelligence <span class="sep">✦</span>
+        </div>
+        <div class="marquee-item">
+          Machine Learning <span class="sep">✦</span>
+        </div>
+        <div class="marquee-item">
+          Cloud Computing <span class="sep">✦</span>
+        </div>
+        <div class="marquee-item">Cybersecurity <span class="sep">✦</span></div>
+        <div class="marquee-item">IoT Solutions <span class="sep">✦</span></div>
+        <div class="marquee-item">Blockchain <span class="sep">✦</span></div>
+        <div class="marquee-item">
+          Data Analytics <span class="sep">✦</span>
+        </div>
+        <div class="marquee-item">DevOps <span class="sep">✦</span></div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="services-header reveal">
+        <div class="section-label">Layanan Kami</div>
+        <h2 class="section-title">Solusi Lengkap<br />untuk Bisnis Anda</h2>
+        <p class="section-desc">
+          Dari pengembangan AI hingga infrastruktur cloud, kami hadir dengan
+          solusi teknologi end-to-end.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div
+          class="service-card reveal"
+          onclick="openModal('ai')"
+          style="cursor: pointer"
+        >
+          <div class="service-icon icon-blue">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            >
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+          </div>
+          <h3>AI & Machine Learning</h3>
+          <p>
+            Tingkatkan efisiensi bisnis dengan solusi kecerdasan buatan yang
+            kami kembangkan khusus untuk kebutuhan Anda.
+          </p>
+          <div class="card-click-hint">Klik untuk detail →</div>
+        </div>
+        <div
+          class="service-card reveal"
+          onclick="openModal('cloud')"
+          style="cursor: pointer"
+        >
+          <div class="service-icon icon-purple">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            >
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8" />
+              <path d="M12 17v4" />
+            </svg>
+          </div>
+          <h3>Cloud Infrastructure</h3>
+          <p>
+            Infrastruktur cloud scalable dan aman yang memastikan bisnis Anda
+            berjalan 24/7 tanpa gangguan.
+          </p>
+          <div class="card-click-hint">Klik untuk detail →</div>
+        </div>
+        <div
+          class="service-card reveal"
+          onclick="openModal('security')"
+          style="cursor: pointer"
+        >
+          <div class="service-icon icon-pink">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3>Cybersecurity</h3>
+          <p>
+            Lindungi aset digital Anda dengan sistem keamanan berlapis yang
+            terus diperbarui menghadapi ancaman terkini.
+          </p>
+          <div class="card-click-hint">Klik untuk detail →</div>
+        </div>
+        <div
+          class="service-card reveal"
+          onclick="openModal('analytics')"
+          style="cursor: pointer"
+        >
+          <div class="service-icon icon-blue">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            >
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+            </svg>
+          </div>
+          <h3>Data Analytics</h3>
+          <p>
+            Ubah data mentah menjadi wawasan bisnis yang actionable dengan
+            platform analitik canggih kami.
+          </p>
+          <div class="card-click-hint">Klik untuk detail →</div>
+        </div>
+        <div
+          class="service-card reveal"
+          onclick="openModal('iot')"
+          style="cursor: pointer"
+        >
+          <div class="service-icon icon-purple">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            >
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"
+              />
+              <path d="M16 12a4 4 0 01-8 0" />
+            </svg>
+          </div>
+          <h3>IoT Ecosystem</h3>
+          <p>
+            Hubungkan perangkat Anda dalam ekosistem IoT yang cerdas,
+            terintegrasi, dan real-time.
+          </p>
+          <div class="card-click-hint">Klik untuk detail →</div>
+        </div>
+        <div
+          class="service-card reveal"
+          onclick="openModal('appdev')"
+          style="cursor: pointer"
+        >
+          <div class="service-icon icon-pink">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <path d="M3 9h18M9 21V9" />
+            </svg>
+          </div>
+          <h3>App Development</h3>
+          <p>
+            Bangun aplikasi web dan mobile berperforma tinggi dengan teknologi
+            terbaru dan UX terbaik.
+          </p>
+          <div class="card-click-hint">Klik untuk detail →</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+      <div class="features-inner">
+        <div class="feature-visual reveal">
+          <canvas id="featureCanvas"></canvas>
+          <div class="fv-label fv-label-1">
+            <span class="fv-dot" style="background: #00e5ff"></span>AI
+            Performance
+          </div>
+          <div class="fv-label fv-label-2">
+            <span class="fv-dot" style="background: #7b5cfa"></span>Cloud Uptime
+          </div>
+          <div class="fv-label fv-label-3">
+            <span class="fv-dot" style="background: #ff3d6b"></span>Security
+            Level
+          </div>
+        </div>
+        <div class="features-text">
+          <div class="section-label reveal">Mengapa NexaTech</div>
+          <h2 class="section-title reveal">
+            Teknologi yang<br />Bekerja untuk Anda
+          </h2>
+          <p class="section-desc reveal" style="margin-bottom: 2.5rem">
+            Kami tidak sekadar menyediakan teknologi — kami membangun ekosistem
+            digital yang mendorong pertumbuhan bisnis Anda secara berkelanjutan.
+          </p>
+          <div class="features-list">
+            <div class="feature-item reveal">
+              <div class="feature-dot dot-cyan"></div>
+              <div>
+                <h4>Performa Tanpa Kompromi</h4>
+                <p>
+                  Arsitektur microservices yang dioptimalkan untuk latensi
+                  rendah dan throughput tinggi di semua kondisi.
+                </p>
+              </div>
+            </div>
+            <div class="feature-item reveal">
+              <div class="feature-dot dot-purple"></div>
+              <div>
+                <h4>Keamanan Tingkat Enterprise</h4>
+                <p>
+                  Enkripsi end-to-end, zero-trust architecture, dan audit trail
+                  lengkap untuk kepatuhan regulasi.
+                </p>
+              </div>
+            </div>
+            <div class="feature-item reveal">
+              <div class="feature-dot dot-pink"></div>
+              <div>
+                <h4>Skalabilitas Otomatis</h4>
+                <p>
+                  Auto-scaling berbasis AI yang menyesuaikan kapasitas secara
+                  real-time sesuai kebutuhan bisnis.
+                </p>
+              </div>
+            </div>
+            <div class="feature-item reveal">
+              <div class="feature-dot dot-cyan"></div>
+              <div>
+                <h4>Integrasi Mudah</h4>
+                <p>
+                  API RESTful dan SDK lengkap untuk integrasi seamless dengan
+                  sistem yang sudah ada.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+      <div class="pricing-header reveal">
+        <div class="section-label">Harga</div>
+        <h2 class="section-title">Investasi Cerdas<br />untuk Pertumbuhan</h2>
+        <p class="section-desc">
+          Pilih paket yang sesuai kebutuhan, dan skalakan kapan pun Anda siap.
+        </p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price"><sup>Rp</sup>299K</div>
+          <div class="plan-period">per bulan</div>
+          <ul class="plan-features">
+            <li>5 Pengguna aktif</li>
+            <li>10 GB Cloud storage</li>
+            <li>AI Chatbot dasar</li>
+            <li>Email support</li>
+            <li>API 1.000 req/hari</li>
+          </ul>
+          <a
+            href="#"
+            class="btn-secondary"
+            style="width: 100%; justify-content: center"
+            >Mulai Gratis</a
+          >
+        </div>
+        <div class="pricing-card featured reveal">
+          <div class="featured-tag">Paling Populer</div>
+          <div class="plan-name">Professional</div>
+          <div class="plan-price"><sup>Rp</sup>799K</div>
+          <div class="plan-period">per bulan</div>
+          <ul class="plan-features">
+            <li>25 Pengguna aktif</li>
+            <li>100 GB Cloud storage</li>
+            <li>AI Suite lengkap</li>
+            <li>Priority support 24/7</li>
+            <li>API unlimited</li>
+            <li>Analytics dashboard</li>
+          </ul>
+          <a
+            href="#"
+            class="btn-primary"
+            style="width: 100%; justify-content: center"
+            >Pilih Paket</a
+          >
+        </div>
+        <div class="pricing-card reveal">
+          <div class="plan-name">Enterprise</div>
+          <div class="plan-price" style="font-size: 2rem">Custom</div>
+          <div class="plan-period">hubungi kami</div>
+          <ul class="plan-features">
+            <li>Pengguna tidak terbatas</li>
+            <li>Storage disesuaikan</li>
+            <li>Dedicated AI models</li>
+            <li>SLA 99.99% uptime</li>
+            <li>On-premise option</li>
+            <li>Dedicated engineer</li>
+          </ul>
+          <a
+            href="#"
+            class="btn-secondary"
+            style="width: 100%; justify-content: center"
+            >Hubungi Sales</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="section-label reveal">Siap Memulai?</div>
+      <h2 class="section-title reveal">
+        Transformasi Digital<br />Dimulai Hari Ini
+      </h2>
+      <p class="section-desc reveal">
+        Bergabunglah dengan 500+ bisnis yang sudah merasakan manfaat platform
+        NexaTech.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#contact" class="btn-primary">Hubungi Kami →</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <!-- CONTACT SECTION — ganti seluruh section contact lama dengan ini -->
+    <section
+      id="contact"
+      style="
+        padding: 80px 20px;
+        text-align: center;
+        background: #0d1117;
+        color: #fff;
+        position: relative;
+        overflow: hidden;
+      "
+    >
+      <!-- Background orbs dekoratif -->
+      <div
+        style="
+          position: absolute;
+          width: 400px;
+          height: 400px;
+          border-radius: 50%;
+          background: radial-gradient(
+            circle,
+            rgba(0, 229, 255, 0.06),
+            transparent 70%
+          );
+          top: -100px;
+          left: 50%;
+          transform: translateX(-50%);
+          pointer-events: none;
+        "
+      ></div>
+      <div
+        style="
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          background: radial-gradient(
+            circle,
+            rgba(123, 92, 250, 0.07),
+            transparent 70%
+          );
+          bottom: 0;
+          right: 10%;
+          pointer-events: none;
+        "
+      ></div>
+
+      <!-- Label -->
+      <p
+        class="contact-anim"
+        style="
+          font-family: &quot;Syne&quot;, sans-serif;
+          font-size: 11px;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          color: #00e5ff;
+          font-weight: 700;
+          margin-bottom: 14px;
+          opacity: 0;
+        "
+      >
+        HUBUNGI KAMI
+      </p>
+
+      <!-- Judul -->
+      <h2
+        class="contact-anim"
+        style="
+          font-family: &quot;Syne&quot;, sans-serif;
+          font-size: clamp(30px, 6vw, 52px);
+          font-weight: 800;
+          line-height: 1.15;
+          margin-bottom: 18px;
+          letter-spacing: -0.02em;
+          opacity: 0;
+        "
+      >
+        Kami Siap<br />
+        <span
+          style="
+            background: linear-gradient(135deg, #00e5ff, #7b5cfa, #ff3d6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+          "
+          >Membantu Anda</span
+        >
+      </h2>
+
+      <!-- Deskripsi -->
+      <p
+        class="contact-anim"
+        style="
+          font-family: &quot;DM Sans&quot;, sans-serif;
+          color: #8b949e;
+          font-size: 15px;
+          line-height: 1.75;
+          max-width: 480px;
+          margin: 0 auto 44px;
+          font-weight: 300;
+          opacity: 0;
+        "
+      >
+        Punya pertanyaan atau ingin konsultasi gratis? Tim kami siap melayani
+        Anda melalui WhatsApp — cepat, mudah, dan responsif.
+      </p>
+
+      <!-- Card QR -->
+      <div
+        class="contact-anim qr-card-wrap"
+        style="display: inline-block; width: 100%; max-width: 340px; opacity: 0"
+      >
+        <div
+          id="qrCardInner"
+          style="
+            background: rgba(22, 27, 34, 0.9);
+            border: 1px solid rgba(48, 54, 61, 0.8);
+            border-radius: 24px;
+            padding: 28px 24px 24px;
+            box-sizing: border-box;
+            position: relative;
+            backdrop-filter: blur(12px);
+            transition:
+              transform 0.3s ease,
+              box-shadow 0.3s ease;
+          "
+        >
+          <!-- Shimmer border animasi -->
+          <div
+            style="
+              position: absolute;
+              inset: 0;
+              border-radius: 24px;
+              padding: 1px;
+              background: linear-gradient(
+                135deg,
+                rgba(0, 229, 255, 0.3),
+                rgba(123, 92, 250, 0.1),
+                rgba(255, 61, 107, 0.2)
+              );
+              -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+              -webkit-mask-composite: xor;
+              mask-composite: exclude;
+              pointer-events: none;
+              animation: borderShimmer 3s linear infinite;
+            "
+          ></div>
+
+          <!-- Header card -->
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-start;
+              margin-bottom: 22px;
+              text-align: left;
+            "
+          >
+            <div>
+              <h3
+                style="
+                  font-family: &quot;Syne&quot;, sans-serif;
+                  margin: 0 0 5px;
+                  font-size: 17px;
+                  font-weight: 700;
+                  color: #e8ecf5;
+                  letter-spacing: -0.01em;
+                "
+              >
+                Scan QR Code
+              </h3>
+              <p
+                style="
+                  font-family: &quot;DM Sans&quot;, sans-serif;
+                  margin: 0;
+                  font-size: 12px;
+                  color: #6b7a99;
+                  font-weight: 300;
+                "
+              >
+                Pindai untuk langsung chat WhatsApp
+              </p>
+            </div>
+            <div
+              style="
+                width: 46px;
+                height: 46px;
+                background: #25d366;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                margin-left: 12px;
+                box-shadow: 0 0 20px rgba(37, 211, 102, 0.35);
+                animation: waPulse 2.5s ease-in-out infinite;
+              "
+            >
+              <svg
+                viewBox="0 0 24 24"
+                style="width: 22px; height: 22px; fill: #fff"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- QR Box -->
+          <div
+            style="
+              background: #fff;
+              border-radius: 14px;
+              padding: 14px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 18px;
+              min-height: 210px;
+              position: relative;
+              overflow: hidden;
+            "
+          >
+            <!-- Scan line animasi -->
+            <div
+              style="
+                position: absolute;
+                left: 14px;
+                right: 14px;
+                height: 2px;
+                background: linear-gradient(
+                  90deg,
+                  transparent,
+                  rgba(0, 229, 255, 0.8),
+                  transparent
+                );
+                animation: scanLine 2.5s ease-in-out infinite;
+                z-index: 2;
+                border-radius: 2px;
+              "
+            ></div>
+            <!-- Corner brackets -->
+            <div
+              style="
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                width: 20px;
+                height: 20px;
+                border-top: 2.5px solid #00e5ff;
+                border-left: 2.5px solid #00e5ff;
+                border-radius: 3px 0 0 0;
+              "
+            ></div>
+            <div
+              style="
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 20px;
+                height: 20px;
+                border-top: 2.5px solid #00e5ff;
+                border-right: 2.5px solid #00e5ff;
+                border-radius: 0 3px 0 0;
+              "
+            ></div>
+            <div
+              style="
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                width: 20px;
+                height: 20px;
+                border-bottom: 2.5px solid #00e5ff;
+                border-left: 2.5px solid #00e5ff;
+                border-radius: 0 0 0 3px;
+              "
+            ></div>
+            <div
+              style="
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                width: 20px;
+                height: 20px;
+                border-bottom: 2.5px solid #00e5ff;
+                border-right: 2.5px solid #00e5ff;
+                border-radius: 0 0 3px 0;
+              "
+            ></div>
+            <div id="qrcode"></div>
+          </div>
+
+          <!-- Tombol WA -->
+          <a
+            href="https://wa.me/6281246888582"
+            target="_blank"
+            rel="noopener"
+            id="waBtnContact"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 10px;
+              width: 100%;
+              padding: 15px;
+              background: linear-gradient(90deg, #00e5ff, #7b5cfa);
+              border-radius: 50px;
+              color: #fff;
+              font-family: &quot;Syne&quot;, sans-serif;
+              font-size: 15px;
+              font-weight: 700;
+              text-decoration: none;
+              box-sizing: border-box;
+              letter-spacing: 0.01em;
+              transition:
+                opacity 0.2s,
+                transform 0.2s,
+                box-shadow 0.2s;
+              box-shadow: 0 4px 20px rgba(0, 229, 255, 0.2);
+            "
+          >
+            <svg
+              viewBox="0 0 24 24"
+              style="width: 18px; height: 18px; fill: #fff; flex-shrink: 0"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            Buka WhatsApp
+          </a>
+
+          <p
+            style="
+              font-family: &quot;DM Sans&quot;, sans-serif;
+              font-size: 12px;
+              color: #6b7a99;
+              margin-top: 12px;
+              font-weight: 300;
+              letter-spacing: 0.01em;
+            "
+          >
+            Arahkan kamera HP Anda ke QR code di atas
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── STYLES ANIMASI ─── -->
+    <style>
+      @keyframes scanLine {
+        0% {
+          top: 14px;
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          top: calc(100% - 16px);
+          opacity: 0;
+        }
+      }
+      @keyframes waPulse {
+        0%,
+        100% {
+          box-shadow: 0 0 20px rgba(37, 211, 102, 0.35);
+        }
+        50% {
+          box-shadow: 0 0 32px rgba(37, 211, 102, 0.65);
+        }
+      }
+      @keyframes borderShimmer {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      @keyframes contactFadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(28px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .contact-anim {
+        animation: contactFadeUp 0.7s ease forwards;
+      }
+      .contact-anim:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .contact-anim:nth-child(2) {
+        animation-delay: 0.25s;
+      }
+      .contact-anim:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+      .contact-anim:nth-child(4) {
+        animation-delay: 0.55s;
+      }
+
+      #qrCardInner:hover {
+        transform: translateY(-4px);
+        box-shadow:
+          0 20px 48px rgba(0, 229, 255, 0.08),
+          0 8px 24px rgba(0, 0, 0, 0.4);
+      }
+      #waBtnContact:hover {
+        opacity: 0.88;
+        transform: scale(1.02);
+        box-shadow: 0 6px 28px rgba(0, 229, 255, 0.35) !important;
+      }
+    </style>
+
+    <!-- ─── QR CODE SCRIPT ─── -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+      (function () {
+        var waUrl = "https://wa.me/6281246888582";
+        var container = document.getElementById("qrcode");
+        if (!container) return;
+        var size = Math.min(container.parentElement.offsetWidth - 28, 210);
+        if (size < 120) size = 180;
+        new QRCode(container, {
+          text: waUrl,
+          width: size,
+          height: size,
+          colorDark: "#000000",
+          colorLight: "#ffffff",
+          correctLevel: QRCode.CorrectLevel.H,
+        });
+      })();
+    </script>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+      <div class="modal-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal()">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+        <div class="modal-icon-wrap" id="modalIcon"></div>
+        <div class="modal-tag" id="modalTag"></div>
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-features" id="modalFeatures"></div>
+        <div class="modal-stats" id="modalStats"></div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="logo-wrap" style="text-decoration: none">
+        <svg
+          width="28"
+          height="28"
+          viewBox="0 0 42 42"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient
+              id="lg1f"
+              x1="0"
+              y1="0"
+              x2="42"
+              y2="42"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" stop-color="#00e5ff" />
+              <stop offset="60%" stop-color="#7b5cfa" />
+              <stop offset="100%" stop-color="#ff3d6b" />
+            </linearGradient>
+            <linearGradient
+              id="lg_bgf"
+              x1="0"
+              y1="0"
+              x2="42"
+              y2="42"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" stop-color="#00e5ff" stop-opacity="0.12" />
+              <stop offset="100%" stop-color="#7b5cfa" stop-opacity="0.18" />
+            </linearGradient>
+          </defs>
+          <rect
+            x="2"
+            y="2"
+            width="38"
+            height="38"
+            rx="11"
+            fill="url(#lg_bgf)"
+            stroke="url(#lg1f)"
+            stroke-width="1.2"
+            opacity="0.9"
+          />
+          <line
+            x1="2"
+            y1="14"
+            x2="40"
+            y2="14"
+            stroke="url(#lg1f)"
+            stroke-width="0.3"
+            opacity="0.3"
+          />
+          <line
+            x1="2"
+            y1="28"
+            x2="40"
+            y2="28"
+            stroke="url(#lg1f)"
+            stroke-width="0.3"
+            opacity="0.3"
+          />
+          <line
+            x1="14"
+            y1="2"
+            x2="14"
+            y2="40"
+            stroke="url(#lg1f)"
+            stroke-width="0.3"
+            opacity="0.3"
+          />
+          <line
+            x1="28"
+            y1="2"
+            x2="28"
+            y2="40"
+            stroke="url(#lg1f)"
+            stroke-width="0.3"
+            opacity="0.3"
+          />
+          <path
+            d="M11 30V12L21 27V12M21 27V30"
+            stroke="url(#lg1f)"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M21 12L31 30V12"
+            stroke="url(#lg1f)"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <circle cx="6" cy="6" r="1.5" fill="#00e5ff" opacity="0.8" />
+          <circle cx="36" cy="6" r="1.5" fill="#7b5cfa" opacity="0.8" />
+          <circle cx="6" cy="36" r="1.5" fill="#7b5cfa" opacity="0.8" />
+          <circle cx="36" cy="36" r="1.5" fill="#ff3d6b" opacity="0.8" />
+        </svg>
+        <span class="logo-name" style="font-size: 1.1rem">NexaTech</span>
+      </div>
+      <div class="footer-copy">© 2025 NexaTech. Semua hak dilindungi.</div>
+      <div class="footer-links">
+        <a href="#">Kebijakan Privasi</a>
+        <a href="#">Syarat Layanan</a>
+        <a href="#">Kontak</a>
+      </div>
+    </footer>
+
+    <script>
+      // ── CURSOR GLOW ──
+      const glow = document.getElementById("cursorGlow");
+      if (window.matchMedia("(pointer:fine)").matches) {
+        document.addEventListener("mousemove", (e) => {
+          glow.style.left = e.clientX + "px";
+          glow.style.top = e.clientY + "px";
+        });
+      }
+
+      // ── HAMBURGER NAV ──
+      const hamburger = document.getElementById("navHamburger");
+      const navMenu = document.getElementById("navMenu");
+      const navOverlay = document.getElementById("navOverlay");
+      hamburger.addEventListener("click", () => {
+        const open = navMenu.classList.toggle("open");
+        navOverlay.classList.toggle("open", open);
+        hamburger.classList.toggle("active", open);
+        document.body.style.overflow = open ? "hidden" : "";
+      });
+      function closeNav() {
+        navMenu.classList.remove("open");
+        navOverlay.classList.remove("open");
+        hamburger.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+
+      // ── SCROLL REVEAL ──
+      const reveals = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry, i) => {
+            if (entry.isIntersecting)
+              setTimeout(() => entry.target.classList.add("visible"), i * 60);
+          });
+        },
+        { threshold: 0.08 },
+      );
+      reveals.forEach((el) => observer.observe(el));
+
+      // ── ANIMATED COUNTERS ──
+      function animateCounter(el, target, isDecimal) {
+        const duration = 2000,
+          start = performance.now();
+        function update(now) {
+          const progress = Math.min((now - start) / duration, 1);
+          const ease = 1 - Math.pow(1 - progress, 3);
+          const value = target * ease;
+          el.textContent = isDecimal
+            ? value.toFixed(1)
+            : Math.floor(value) + (target === 500 ? "+" : "");
+          if (progress < 1) requestAnimationFrame(update);
+        }
+        requestAnimationFrame(update);
+      }
+      const statNums = document.querySelectorAll(".stat-num");
+      const counterObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const el = entry.target;
+              animateCounter(
+                el,
+                parseFloat(el.dataset.target),
+                parseFloat(el.dataset.target) % 1 !== 0,
+              );
+              counterObserver.unobserve(el);
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+      statNums.forEach((el) => counterObserver.observe(el));
+
+      // ── FEATURE CANVAS ──
+      (function () {
+        const canvas = document.getElementById("featureCanvas");
+        if (!canvas) return;
+        const ctx = canvas.getContext("2d");
+
+        function resize() {
+          const wrap = canvas.parentElement;
+          const w = wrap.clientWidth;
+          const h = Math.min(w * 0.84, 420);
+          canvas.width = w;
+          canvas.height = h;
+        }
+        resize();
+        window.addEventListener("resize", resize);
+
+        const nodes = Array.from({ length: 24 }, (_, i) => ({
+          x: 60 + Math.random() * 380,
+          y: 60 + Math.random() * 150,
+          vx: (Math.random() - 0.5) * 0.5,
+          vy: (Math.random() - 0.5) * 0.5,
+          r: Math.random() * 3 + 2,
+          color: ["#00e5ff", "#7b5cfa", "#ff3d6b"][i % 3],
+          phase: Math.random() * Math.PI * 2,
+        }));
+
+        const packets = Array.from({ length: 5 }, (_, i) => ({
+          progress: i / 5,
+          fromIdx: Math.floor(Math.random() * nodes.length),
+          toIdx: Math.floor(Math.random() * nodes.length),
+          color: ["#00e5ff", "#7b5cfa", "#ff3d6b"][i % 3],
+          speed: 0.003 + Math.random() * 0.003,
+        }));
+
+        const bars = [
+          { label: "AI", value: 0.92, color: "#00e5ff" },
+          { label: "Cloud", value: 0.99, color: "#7b5cfa" },
+          { label: "Sec", value: 0.97, color: "#ff3d6b" },
+          { label: "IoT", value: 0.85, color: "#00e5ff" },
+          { label: "Dev", value: 0.9, color: "#7b5cfa" },
+        ];
+
+        let t = 0,
+          radarProgress = 0;
+
+        function drawRadar(W, H, progress) {
+          const cx = W / 2,
+            cy = H * 0.265,
+            r = Math.min(W, H) * 0.22;
+          const labels = ["AI", "Cloud", "Sec", "IoT", "Dev"];
+          const values = [0.92, 0.99, 0.97, 0.85, 0.9];
+          const colors = [
+            "#00e5ff",
+            "#7b5cfa",
+            "#ff3d6b",
+            "#00e5ff",
+            "#7b5cfa",
+          ];
+          const sides = labels.length;
+          const step = (Math.PI * 2) / sides;
+          const offset = -Math.PI / 2;
+
+          for (let ring = 1; ring <= 4; ring++) {
+            ctx.beginPath();
+            for (let i = 0; i <= sides; i++) {
+              const angle = offset + i * step;
+              const rr = (r * ring) / 4;
+              const x = cx + Math.cos(angle) * rr,
+                y = cy + Math.sin(angle) * rr;
+              i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+            }
+            ctx.strokeStyle = "rgba(255,255,255,0.06)";
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+          for (let i = 0; i < sides; i++) {
+            const angle = offset + i * step;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy);
+            ctx.lineTo(cx + Math.cos(angle) * r, cy + Math.sin(angle) * r);
+            ctx.strokeStyle = "rgba(255,255,255,0.07)";
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
+          ctx.beginPath();
+          for (let i = 0; i < sides; i++) {
+            const angle = offset + i * step;
+            const val = values[i] * progress;
+            const x = cx + Math.cos(angle) * r * val,
+              y = cy + Math.sin(angle) * r * val;
+            i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+          }
+          ctx.closePath();
+          const grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, r);
+          grad.addColorStop(0, "rgba(0,229,255,0.25)");
+          grad.addColorStop(0.5, "rgba(123,92,250,0.18)");
+          grad.addColorStop(1, "rgba(255,61,107,0.1)");
+          ctx.fillStyle = grad;
+          ctx.fill();
+          ctx.strokeStyle = "rgba(0,229,255,0.6)";
+          ctx.lineWidth = 2;
+          ctx.stroke();
+          for (let i = 0; i < sides; i++) {
+            const angle = offset + i * step;
+            const val = values[i] * progress;
+            const x = cx + Math.cos(angle) * r * val,
+              y = cy + Math.sin(angle) * r * val;
+            ctx.beginPath();
+            ctx.arc(x, y, 4, 0, Math.PI * 2);
+            ctx.fillStyle = colors[i];
+            ctx.shadowColor = colors[i];
+            ctx.shadowBlur = 10;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+          }
+          ctx.font = `600 ${Math.max(8, r * 0.11)}px DM Sans, sans-serif`;
+          ctx.textAlign = "center";
+          ctx.textBaseline = "middle";
+          for (let i = 0; i < sides; i++) {
+            const angle = offset + i * step;
+            const lx = cx + Math.cos(angle) * (r + 18),
+              ly = cy + Math.sin(angle) * (r + 18);
+            ctx.fillStyle = "rgba(232,236,245,0.7)";
+            ctx.fillText(labels[i], lx, ly);
+          }
+        }
+
+        function drawBars(W, H, progress) {
+          const bW = Math.max(14, W * 0.055);
+          const gap = Math.max(8, W * 0.03);
+          const totalW = bars.length * bW + (bars.length - 1) * gap;
+          const startX = (W - totalW) / 2;
+          const bottomY = H - 20;
+          const maxH = H * 0.16;
+          bars.forEach((bar, i) => {
+            const x = startX + i * (bW + gap);
+            const bH = bar.value * maxH * progress;
+            const y = bottomY - bH;
+            ctx.fillStyle = "rgba(255,255,255,0.04)";
+            ctx.beginPath();
+            ctx.roundRect(x, bottomY - maxH, bW, maxH, 4);
+            ctx.fill();
+            const barGrad = ctx.createLinearGradient(x, y, x, bottomY);
+            barGrad.addColorStop(0, bar.color);
+            barGrad.addColorStop(1, bar.color + "44");
+            ctx.fillStyle = barGrad;
+            ctx.shadowColor = bar.color;
+            ctx.shadowBlur = 8;
+            ctx.beginPath();
+            ctx.roundRect(x, y, bW, bH, 4);
+            ctx.fill();
+            ctx.shadowBlur = 0;
+            const fs = Math.max(8, bW * 0.32);
+            ctx.font = `700 ${fs}px DM Sans, sans-serif`;
+            ctx.textAlign = "center";
+            ctx.fillStyle = bar.color;
+            ctx.fillText(
+              Math.round(bar.value * 100 * progress) + "%",
+              x + bW / 2,
+              y - 6,
+            );
+            ctx.fillStyle = "rgba(107,122,153,0.9)";
+            ctx.font = `500 ${fs}px DM Sans, sans-serif`;
+            ctx.fillText(bar.label, x + bW / 2, bottomY + 12);
+          });
+        }
+
+        function draw() {
+          const W = canvas.width,
+            H = canvas.height;
+          ctx.clearRect(0, 0, W, H);
+          const blob1 = ctx.createRadialGradient(
+            W * 0.3,
+            H * 0.3,
+            0,
+            W * 0.3,
+            H * 0.3,
+            W * 0.4,
+          );
+          blob1.addColorStop(0, "rgba(0,229,255,0.07)");
+          blob1.addColorStop(1, "transparent");
+          ctx.fillStyle = blob1;
+          ctx.fillRect(0, 0, W, H);
+          const blob2 = ctx.createRadialGradient(
+            W * 0.7,
+            H * 0.6,
+            0,
+            W * 0.7,
+            H * 0.6,
+            W * 0.35,
+          );
+          blob2.addColorStop(0, "rgba(123,92,250,0.08)");
+          blob2.addColorStop(1, "transparent");
+          ctx.fillStyle = blob2;
+          ctx.fillRect(0, 0, W, H);
+          t += 0.012;
+          if (radarProgress < 1)
+            radarProgress = Math.min(radarProgress + 0.012, 1);
+          nodes.forEach((p) => {
+            p.x += p.vx;
+            p.y += p.vy;
+            if (p.x < 30 || p.x > W - 30) p.vx *= -1;
+            if (p.y < 30 || p.y > H * 0.42) p.vy *= -1;
+          });
+          for (let i = 0; i < nodes.length; i++) {
+            for (let j = i + 1; j < nodes.length; j++) {
+              if (nodes[j].y > H * 0.42) continue;
+              const dx = nodes[i].x - nodes[j].x,
+                dy = nodes[i].y - nodes[j].y;
+              const dist = Math.sqrt(dx * dx + dy * dy);
+              if (dist < 90) {
+                const alpha = (1 - dist / 90) * 0.35;
+                const grad = ctx.createLinearGradient(
+                  nodes[i].x,
+                  nodes[i].y,
+                  nodes[j].x,
+                  nodes[j].y,
+                );
+                grad.addColorStop(
+                  0,
+                  nodes[i].color +
+                    Math.round(alpha * 255)
+                      .toString(16)
+                      .padStart(2, "0"),
+                );
+                grad.addColorStop(
+                  1,
+                  nodes[j].color +
+                    Math.round(alpha * 255)
+                      .toString(16)
+                      .padStart(2, "0"),
+                );
+                ctx.beginPath();
+                ctx.strokeStyle = grad;
+                ctx.lineWidth = 0.8;
+                ctx.moveTo(nodes[i].x, nodes[i].y);
+                ctx.lineTo(nodes[j].x, nodes[j].y);
+                ctx.stroke();
+              }
+            }
+          }
+          nodes.forEach((p) => {
+            if (p.y > H * 0.42) return;
+            const pulse = Math.sin(t * 2 + p.phase) * 0.4 + 0.6;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r * pulse, 0, Math.PI * 2);
+            ctx.fillStyle = p.color;
+            ctx.shadowColor = p.color;
+            ctx.shadowBlur = 10 * pulse;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+          });
+          packets.forEach((pk) => {
+            pk.progress += pk.speed;
+            if (pk.progress >= 1) {
+              pk.progress = 0;
+              pk.fromIdx = pk.toIdx;
+              pk.toIdx = Math.floor(Math.random() * nodes.length);
+            }
+            const from = nodes[pk.fromIdx],
+              to = nodes[pk.toIdx];
+            if (from.y > H * 0.42 || to.y > H * 0.42) return;
+            const x = from.x + (to.x - from.x) * pk.progress,
+              y = from.y + (to.y - from.y) * pk.progress;
+            ctx.beginPath();
+            ctx.arc(x, y, 3, 0, Math.PI * 2);
+            ctx.fillStyle = pk.color;
+            ctx.shadowColor = pk.color;
+            ctx.shadowBlur = 12;
+            ctx.fill();
+            ctx.shadowBlur = 0;
+          });
+          ctx.beginPath();
+          ctx.moveTo(20, H * 0.44);
+          ctx.lineTo(W - 20, H * 0.44);
+          ctx.strokeStyle = "rgba(255,255,255,0.05)";
+          ctx.lineWidth = 1;
+          ctx.stroke();
+          drawRadar(W, H, radarProgress);
+          drawBars(W, H, radarProgress);
+          requestAnimationFrame(draw);
+        }
+        draw();
+      })();
+
+      // ── QR CODE ──
+      (function () {
+        const canvas = document.getElementById("qrCanvas");
+        if (!canvas) return;
+        const ctx = canvas.getContext("2d");
+        const script = document.createElement("script");
+        script.src =
+          "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js";
+        script.onload = function () {
+          const div = document.createElement("div");
+          div.style.display = "none";
+          document.body.appendChild(div);
+          const qr = new QRCode(div, {
+            text: "https://wa.me/6281246888582",
+            width: 200,
+            height: 200,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H,
+          });
+          setTimeout(() => {
+            const img = div.querySelector("img") || div.querySelector("canvas");
+            if (img) {
+              if (img.tagName === "CANVAS") {
+                ctx.drawImage(img, 0, 0, 200, 200);
+              } else {
+                const i = new Image();
+                i.onload = () => ctx.drawImage(i, 0, 0, 200, 200);
+                i.src = img.src;
+              }
+            }
+            document.body.removeChild(div);
+          }, 300);
+        };
+        document.head.appendChild(script);
+      })();
+
+      // ── MODAL DATA ──
+      const modalData = {
+        ai: {
+          icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>`,
+          iconBg: "rgba(0,229,255,0.12)",
+          iconColor: "#00e5ff",
+          tag: "AI & ML",
+          tagBg: "rgba(0,229,255,0.1)",
+          tagColor: "#00e5ff",
+          title: "AI & Machine Learning",
+          desc: "Platform AI end-to-end yang kami bangun memungkinkan bisnis mengotomatiskan proses, memprediksi tren pasar, dan membuat keputusan berbasis data secara real-time dengan akurasi tinggi.",
+          features: [
+            {
+              title: "Natural Language Processing",
+              desc: "Analisis sentimen, chatbot pintar, dan pemrosesan dokumen otomatis.",
+            },
+            {
+              title: "Computer Vision",
+              desc: "Deteksi objek, pengenalan wajah, dan inspeksi kualitas visual.",
+            },
+            {
+              title: "Predictive Analytics",
+              desc: "Model prediksi penjualan, churn, dan demand forecasting.",
+            },
+            {
+              title: "AutoML Pipeline",
+              desc: "Training dan deployment model otomatis tanpa keahlian data science khusus.",
+            },
+          ],
+          stats: [
+            { num: "98%", label: "Akurasi Model" },
+            { num: "<50ms", label: "Latensi Inferensi" },
+            { num: "200+", label: "Model Tersedia" },
+          ],
+        },
+        cloud: {
+          icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>`,
+          iconBg: "rgba(123,92,250,0.12)",
+          iconColor: "#7b5cfa",
+          tag: "Cloud",
+          tagBg: "rgba(123,92,250,0.1)",
+          tagColor: "#7b5cfa",
+          title: "Cloud Infrastructure",
+          desc: "Infrastruktur multi-cloud yang dikelola penuh oleh tim kami — dari perencanaan kapasitas hingga monitoring 24/7, semua ditangani sehingga Anda fokus pada bisnis.",
+          features: [
+            {
+              title: "Multi-Cloud Management",
+              desc: "Kelola AWS, GCP, dan Azure dari satu dashboard terpadu.",
+            },
+            {
+              title: "Auto-Scaling",
+              desc: "Kapasitas menyesuaikan traffic secara otomatis, hemat biaya hingga 40%.",
+            },
+            {
+              title: "Disaster Recovery",
+              desc: "Backup real-time dan failover otomatis ke region cadangan.",
+            },
+            {
+              title: "Kubernetes Orchestration",
+              desc: "Deployment container terstandardisasi dan mudah dikelola.",
+            },
+          ],
+          stats: [
+            { num: "99.99%", label: "Uptime SLA" },
+            { num: "3", label: "Region Asia" },
+            { num: "40%", label: "Hemat Biaya" },
+          ],
+        },
+        security: {
+          icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
+          iconBg: "rgba(255,61,107,0.12)",
+          iconColor: "#ff3d6b",
+          tag: "Security",
+          tagBg: "rgba(255,61,107,0.1)",
+          tagColor: "#ff3d6b",
+          title: "Cybersecurity",
+          desc: "Proteksi berlapis dengan pendekatan zero-trust yang memastikan setiap akses terverifikasi. Sistem kami mendeteksi dan merespons ancaman sebelum menyebabkan kerugian.",
+          features: [
+            {
+              title: "Zero-Trust Architecture",
+              desc: "Setiap request diverifikasi — tidak ada yang dipercaya secara default.",
+            },
+            {
+              title: "Threat Intelligence",
+              desc: "Pemantauan ancaman global 24/7 dengan respons insiden otomatis.",
+            },
+            {
+              title: "Enkripsi End-to-End",
+              desc: "Data dienkripsi AES-256 dalam transit dan saat tersimpan.",
+            },
+            {
+              title: "Compliance & Audit",
+              desc: "Laporan kepatuhan ISO 27001, SOC 2, dan GDPR siap pakai.",
+            },
+          ],
+          stats: [
+            { num: "0", label: "Breach Record" },
+            { num: "<5min", label: "Respons Insiden" },
+            { num: "100%", label: "Enkripsi Data" },
+          ],
+        },
+        analytics: {
+          icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>`,
+          iconBg: "rgba(0,229,255,0.12)",
+          iconColor: "#00e5ff",
+          tag: "Analytics",
+          tagBg: "rgba(0,229,255,0.1)",
+          tagColor: "#00e5ff",
+          title: "Data Analytics",
+          desc: "Platform analitik terintegrasi yang mengumpulkan, memproses, dan memvisualisasikan data dari semua sumber bisnis Anda dalam satu tampilan yang mudah dipahami.",
+          features: [
+            {
+              title: "Real-Time Dashboard",
+              desc: "Visualisasi data bisnis secara langsung dengan update sub-detik.",
+            },
+            {
+              title: "ETL Pipeline",
+              desc: "Integrasi data dari 200+ sumber: CRM, ERP, media sosial, POS.",
+            },
+            {
+              title: "Business Intelligence",
+              desc: "Laporan otomatis, drill-down interaktif, dan alerting cerdas.",
+            },
+            {
+              title: "Data Lake & Warehouse",
+              desc: "Simpan dan query petabyte data dengan performa tinggi.",
+            },
+          ],
+          stats: [
+            { num: "200+", label: "Sumber Data" },
+            { num: "<1s", label: "Query Speed" },
+            { num: "10x", label: "ROI Rata-rata" },
+          ],
+        },
+        iot: {
+          icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14"/><path d="M16 12a4 4 0 01-8 0"/></svg>`,
+          iconBg: "rgba(123,92,250,0.12)",
+          iconColor: "#7b5cfa",
+          tag: "IoT",
+          tagBg: "rgba(123,92,250,0.1)",
+          tagColor: "#7b5cfa",
+          title: "IoT Ecosystem",
+          desc: "Platform IoT enterprise yang menghubungkan ribuan perangkat, mengumpulkan data sensor secara real-time, dan mengaktifkan otomasi cerdas berbasis kondisi lapangan.",
+          features: [
+            {
+              title: "Device Management",
+              desc: "Kelola ribuan perangkat IoT dari satu konsol terpusat.",
+            },
+            {
+              title: "Edge Computing",
+              desc: "Proses data di perangkat untuk respons instan tanpa latensi jaringan.",
+            },
+            {
+              title: "MQTT & CoAP Protocol",
+              desc: "Dukungan protokol IoT standar industri yang ringan dan efisien.",
+            },
+            {
+              title: "Predictive Maintenance",
+              desc: "Deteksi dini kerusakan perangkat sebelum terjadi downtime.",
+            },
+          ],
+          stats: [
+            { num: "50K+", label: "Perangkat Aktif" },
+            { num: "10ms", label: "Latensi Edge" },
+            { num: "99.9%", label: "Reliabilitas" },
+          ],
+        },
+        appdev: {
+          icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>`,
+          iconBg: "rgba(255,61,107,0.12)",
+          iconColor: "#ff3d6b",
+          tag: "App Dev",
+          tagBg: "rgba(255,61,107,0.1)",
+          tagColor: "#ff3d6b",
+          title: "App Development",
+          desc: "Tim developer kami membangun aplikasi web dan mobile yang tidak hanya indah, tapi juga cepat, aman, dan scalable — siap menangani jutaan pengguna.",
+          features: [
+            {
+              title: "Web App (React/Next.js)",
+              desc: "SPA dan SSR dengan performa Lighthouse 95+ out-of-the-box.",
+            },
+            {
+              title: "Mobile (iOS & Android)",
+              desc: "Native dan React Native untuk pengalaman pengguna terbaik.",
+            },
+            {
+              title: "API & Microservices",
+              desc: "Arsitektur modern dengan REST, GraphQL, dan event-driven design.",
+            },
+            {
+              title: "CI/CD & DevOps",
+              desc: "Pipeline deployment otomatis untuk rilis cepat dan aman.",
+            },
+          ],
+          stats: [
+            { num: "150+", label: "App Diluncurkan" },
+            { num: "4.8★", label: "Rating App Store" },
+            { num: "2 Minggu", label: "MVP Pertama" },
+          ],
+        },
+      };
+
+      function openModal(key) {
+        const d = modalData[key];
+        if (!d) return;
+        const iconEl = document.getElementById("modalIcon");
+        iconEl.innerHTML = d.icon;
+        iconEl.style.cssText = `width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;background:${d.iconBg};color:${d.iconColor}`;
+        const tagEl = document.getElementById("modalTag");
+        tagEl.textContent = d.tag;
+        tagEl.style.cssText = `display:inline-block;font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:0.3rem 0.9rem;border-radius:50px;margin-bottom:0.8rem;background:${d.tagBg};color:${d.tagColor}`;
+        document.getElementById("modalTitle").textContent = d.title;
+        document.getElementById("modalDesc").textContent = d.desc;
+        document.getElementById("modalFeatures").innerHTML = d.features
+          .map(
+            (f) => `
+          <div class="modal-feat-item">
+            <div class="feat-check" style="background:${d.iconBg};width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px">
+              <svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="${d.iconColor}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div><strong>${f.title}</strong><span style="display:block;color:var(--text-muted);font-size:0.82rem">${f.desc}</span></div>
+          </div>`,
+          )
+          .join("");
+        document.getElementById("modalStats").innerHTML = d.stats
+          .map(
+            (s) => `
+          <div class="modal-stat">
+            <span class="modal-stat-num" style="background:linear-gradient(135deg,${d.iconColor},#7b5cfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-family:var(--font-display);font-size:1.3rem;font-weight:800;display:block;letter-spacing:-0.02em">${s.num}</span>
+            <span class="modal-stat-label" style="font-size:0.72rem;color:var(--text-muted)">${s.label}</span>
+          </div>`,
+          )
+          .join("");
+        document.getElementById("modalOverlay").classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        document.getElementById("modalOverlay").classList.remove("active");
+        document.body.style.overflow = "";
+      }
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeModal();
+      });
+    </script>
+  </body>
+</html>
