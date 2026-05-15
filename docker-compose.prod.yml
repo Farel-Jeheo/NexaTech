@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  web:
+    restart: always
+    ports:
+      - "80:80"
+    volumes: []
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 128M
+        reservations:
+          cpus: "0.10"
+          memory: 32M
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
