@@ -1,0 +1,1136 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lydevva — Service Gadget & Laptop Terpercaya</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+
+    <!-- NAV -->
+    <nav>
+      <a href="#" class="logo-wrap">
+        <svg
+          width="38"
+          height="38"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <linearGradient
+              id="lgA"
+              x1="0"
+              y1="0"
+              x2="48"
+              y2="48"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" stop-color="#a78bfa" />
+              <stop offset="50%" stop-color="#38bdf8" />
+              <stop offset="100%" stop-color="#34d399" />
+            </linearGradient>
+            <linearGradient
+              id="lgB"
+              x1="0"
+              y1="0"
+              x2="48"
+              y2="48"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" stop-color="#a78bfa" stop-opacity=".18" />
+              <stop offset="100%" stop-color="#38bdf8" stop-opacity=".08" />
+            </linearGradient>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="1.5" result="blur" />
+              <feMerge>
+                <feMergeNode in="blur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+          <!-- Hexagon bg -->
+          <path
+            d="M24 3 L42 13.5 L42 34.5 L24 45 L6 34.5 L6 13.5 Z"
+            fill="url(#lgB)"
+            stroke="url(#lgA)"
+            stroke-width="1.4"
+          />
+          <!-- Inner ring -->
+          <path
+            d="M24 9 L38 17 L38 31 L24 39 L10 31 L10 17 Z"
+            fill="none"
+            stroke="url(#lgA)"
+            stroke-width="0.6"
+            opacity="0.4"
+          />
+          <!-- Letter L stylized -->
+          <path
+            d="M17 14 L17 30"
+            stroke="url(#lgA)"
+            stroke-width="3"
+            stroke-linecap="round"
+            filter="url(#glow)"
+          />
+          <path
+            d="M17 30 L31 30"
+            stroke="url(#lgA)"
+            stroke-width="3"
+            stroke-linecap="round"
+            filter="url(#glow)"
+          />
+          <!-- Accent dot -->
+          <circle cx="31" cy="17" r="3" fill="url(#lgA)" opacity="0.9" />
+          <circle cx="31" cy="17" r="5" fill="url(#lgA)" opacity="0.15" />
+        </svg>
+        <span class="logo-name">Lydevva</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="navMenu">
+        <li><a href="#services" onclick="closeNav()">Layanan</a></li>
+        <li><a href="#why" onclick="closeNav()">Kenapa Kami</a></li>
+        <li><a href="#pricing" onclick="closeNav()">Harga</a></li>
+        <li><a href="#faq" onclick="closeNav()">FAQ</a></li>
+        <li><a href="#contact" onclick="closeNav()">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <div class="badge-dot"></div>
+          Service Center Profesional Ruteng
+        </div>
+        <h1>
+          Servis Gadget &<br /><span class="grad-text">Laptop Terpercaya</span>
+        </h1>
+        <p class="hero-desc">
+          Lydevva menghadirkan layanan perbaikan gadget dan laptop dengan
+          teknisi berpengalaman, spare part original, dan garansi resmi. Cepat,
+          tepat, dan transparan.
+        </p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary"
+            >Konsultasi Gratis
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M3 8h10M9 4l4 4-4 4"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a href="#services" class="btn-secondary"
+            >Lihat Layanan
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M8 3v5.5l3 1.8"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+              <circle
+                cx="8"
+                cy="8"
+                r="5.5"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-target="3000">0</span>
+            <span class="stat-label">Perangkat Diperbaiki</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="98">0</span>
+            <span class="stat-label">% Kepuasan Pelanggan</span>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-section">
+      <div class="marquee-track">
+        <div class="marquee-item">Servis iPhone <span class="sep">✦</span></div>
+        <div class="marquee-item">Ganti LCD <span class="sep">✦</span></div>
+        <div class="marquee-item">Servis Laptop <span class="sep">✦</span></div>
+        <div class="marquee-item">
+          Servis Android <span class="sep">✦</span>
+        </div>
+        <div class="marquee-item">Ganti Baterai <span class="sep">✦</span></div>
+        <div class="marquee-item">
+          Install Ulang OS <span class="sep">✦</span>
+        </div>
+        <div class="marquee-item">Servis Kamera <span class="sep">✦</span></div>
+        <div class="marquee-item">Data Recovery <span class="sep">✦</span></div>
+        <div class="marquee-item">Servis iPhone <span class="sep">✦</span></div>
+        <div class="marquee-item">Ganti LCD <span class="sep">✦</span></div>
+        <div class="marquee-item">Servis Laptop <span class="sep">✦</span></div>
+        <div class="marquee-item">
+          Servis Android <span class="sep">✦</span>
+        </div>
+        <div class="marquee-item">Ganti Baterai <span class="sep">✦</span></div>
+        <div class="marquee-item">
+          Install Ulang OS <span class="sep">✦</span>
+        </div>
+        <div class="marquee-item">Servis Kamera <span class="sep">✦</span></div>
+        <div class="marquee-item">Data Recovery <span class="sep">✦</span></div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="services-header">
+        <div class="section-label reveal">Layanan Kami</div>
+        <h2 class="section-title reveal">
+          Solusi Lengkap untuk<br />Semua Perangkat Anda
+        </h2>
+        <p class="section-desc reveal">
+          Dari layar retak hingga kerusakan motherboard, tim teknisi Lydevva
+          siap menangani dengan cepat dan profesional.
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="svc-card reveal" onclick="openModal('lcd')">
+          <div class="svc-icon icon-cyan">📱</div>
+          <h3>Ganti LCD & Touchscreen</h3>
+          <p>
+            Layar pecah, mati, atau tidak responsif? Kami ganti dengan panel
+            LCD/OLED original bergaransi untuk semua merek iPhone, Samsung,
+            Xiaomi, OPPO, Vivo, dan lainnya.
+          </p>
+          <span class="svc-price">Mulai Rp 150.000</span>
+          <div class="svc-hint">Klik untuk detail →</div>
+        </div>
+        <div class="svc-card reveal" onclick="openModal('baterai')">
+          <div class="svc-icon icon-purple">🔋</div>
+          <h3>Ganti Baterai</h3>
+          <p>
+            Baterai cepat habis, ngedrop, atau HP tidak mau nyala? Kami gunakan
+            baterai berkualitas tinggi dengan kapasitas sesuai spesifikasi
+            original perangkat Anda.
+          </p>
+          <span class="svc-price">Mulai Rp 80.000</span>
+          <div class="svc-hint">Klik untuk detail →</div>
+        </div>
+        <div class="svc-card reveal" onclick="openModal('laptop')">
+          <div class="svc-icon icon-pink">💻</div>
+          <h3>Servis Laptop</h3>
+          <p>
+            Laptop lambat, overheating, tidak bisa booting, atau rusak total?
+            Kami tangani semua merek: Asus, Lenovo, HP, Dell, Acer, MacBook
+            dengan teknisi bersertifikat.
+          </p>
+          <span class="svc-price">Mulai Rp 100.000</span>
+          <div class="svc-hint">Klik untuk detail →</div>
+        </div>
+        <div class="svc-card reveal" onclick="openModal('software')">
+          <div class="svc-icon icon-cyan">⚙️</div>
+          <h3>Install Ulang & Software</h3>
+          <p>
+            Install ulang Windows, macOS, atau Android. Upgrade ke versi
+            terbaru, hapus virus/malware, setup driver, dan optimasi performa
+            agar kembali seperti baru.
+          </p>
+          <span class="svc-price">Mulai Rp 75.000</span>
+          <div class="svc-hint">Klik untuk detail →</div>
+        </div>
+        <div class="svc-card reveal" onclick="openModal('data')">
+          <div class="svc-icon icon-purple">💾</div>
+          <h3>Recovery Data</h3>
+          <p>
+            Data terhapus, HP mati total, atau storage rusak? Tim spesialis kami
+            menggunakan peralatan canggih untuk memulihkan foto, dokumen, dan
+            data penting Anda.
+          </p>
+          <span class="svc-price">Mulai Rp 200.000</span>
+          <div class="svc-hint">Klik untuk detail →</div>
+        </div>
+        <div class="svc-card reveal" onclick="openModal('kamera')">
+          <div class="svc-icon icon-pink">📷</div>
+          <h3>Servis Kamera & Aksesoris</h3>
+          <p>
+            Kamera HP buram atau tidak bisa terbuka? Kami juga tangani charging
+            port rusak, speaker mati, mikrofon bermasalah, dan kamera digital.
+          </p>
+          <span class="svc-price">Mulai Rp 60.000</span>
+          <div class="svc-hint">Klik untuk detail →</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why" id="why">
+      <div class="why-inner">
+        <div class="why-text">
+          <div class="section-label reveal">Kenapa Lydevva?</div>
+          <h2 class="section-title reveal">
+            Kami Beda dari<br />Service Center Biasa
+          </h2>
+          <p class="section-desc reveal">
+            Kepercayaan pelanggan adalah prioritas utama kami. Setiap perangkat
+            ditangani dengan standar kualitas tertinggi.
+          </p>
+          <div class="why-list">
+            <div class="why-item reveal">
+              <div class="why-dot icon-cyan">🛡️</div>
+              <div>
+                <h4>Garansi Servis 30 Hari</h4>
+                <p>
+                  Setiap pekerjaan bergaransi resmi 30 hari. Jika ada masalah
+                  yang sama kembali, kami perbaiki gratis tanpa pertanyaan.
+                </p>
+              </div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-dot icon-purple">⚡</div>
+              <div>
+                <h4>Estimasi Harga Transparan</h4>
+                <p>
+                  Biaya diinformasikan sebelum pengerjaan dimulai. Tidak ada
+                  biaya tersembunyi atau tagihan mengejutkan di akhir.
+                </p>
+              </div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-dot icon-pink">🔧</div>
+              <div>
+                <h4>Teknisi Bersertifikat</h4>
+                <p>
+                  Tim kami terdiri dari teknisi berpengalaman 5+ tahun dengan
+                  sertifikasi resmi dari vendor-vendor terkemuka.
+                </p>
+              </div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-dot icon-cyan">📦</div>
+              <div>
+                <h4>Spare Part Original</h4>
+                <p>
+                  Kami hanya menggunakan spare part original atau OEM
+                  berkualitas tinggi yang sudah terseleksi untuk hasil terbaik.
+                </p>
+              </div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-dot icon-purple">🚀</div>
+              <div>
+                <h4>Pengerjaan Cepat 1–3 Jam</h4>
+                <p>
+                  Kebanyakan servis ringan selesai dalam 1–3 jam. Pantau status
+                  servis secara real-time via WhatsApp.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-visual reveal">
+          <div class="why-card-stack">
+            <div class="wc3"></div>
+            <div class="wc2"></div>
+            <div class="wc">
+              <div class="wc-row">
+                <span class="wc-badge">Order #LV-2847</span>
+                <span class="wc-status">Sedang Diproses</span>
+              </div>
+              <div class="wc-title">Samsung Galaxy S24 — LCD</div>
+              <div class="wc-sub">Estimasi selesai: 2 jam lagi</div>
+              <div class="wc-progress-wrap">
+                <div class="wc-bar" style="--w: 65%"></div>
+              </div>
+              <div class="wc-pct-row">
+                <span class="wc-pct-label">Progress</span>
+                <span class="wc-pct-val">65%</span>
+              </div>
+              <div class="wc-steps">
+                <div class="wc-step step-done">Diagnosa ✓</div>
+                <div class="wc-step step-active">Perbaikan ⚙</div>
+                <div class="wc-step step-todo">QC Test</div>
+                <div class="wc-step step-todo">Selesai</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+      <div class="pricing-header">
+        <div class="section-label reveal">Paket Harga</div>
+        <h2 class="section-title reveal">
+          Harga Jelas,<br />Tanpa Biaya Tersembunyi
+        </h2>
+        <p class="section-desc reveal">
+          Pilih paket yang sesuai kebutuhan Anda. Semua paket sudah termasuk
+          garansi servis 30 hari.
+        </p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card reveal">
+          <div class="plan-name">Basic</div>
+          <div class="plan-price">
+            <sup>Rp</sup>75<span style="font-size: 1.2rem">rb</span>
+          </div>
+          <div class="plan-period">mulai dari / layanan</div>
+          <ul class="plan-features">
+            <li>Diagnosa & konsultasi gratis</li>
+            <li>Servis software (virus, OS)</li>
+            <li>Ganti baterai HP</li>
+            <li>Garansi 30 hari</li>
+            <li>Estimasi harga di awal</li>
+          </ul>
+          <button
+            class="btn-secondary btn-full"
+            onclick="openKonsultasi('Basic')"
+          >
+            Pilih Paket
+          </button>
+        </div>
+        <div class="price-card featured reveal">
+          <div class="feat-tag">⭐ Terpopuler</div>
+          <div class="plan-name">Standard</div>
+          <div class="plan-price">
+            <sup>Rp</sup>150<span style="font-size: 1.2rem">rb</span>
+          </div>
+          <div class="plan-period">mulai dari / layanan</div>
+          <ul class="plan-features">
+            <li>Semua fitur Basic</li>
+            <li>Ganti LCD / touchscreen</li>
+            <li>Servis hardware HP & tablet</li>
+            <li>Pickup & delivery Malang</li>
+            <li>Update status via WhatsApp</li>
+            <li>Prioritas antrian</li>
+          </ul>
+          <button
+            class="btn-primary btn-full"
+            onclick="openKonsultasi('Standard')"
+          >
+            Pilih Paket
+          </button>
+        </div>
+        <div class="price-card reveal">
+          <div class="plan-name">Premium</div>
+          <div class="plan-price">
+  <sup>Rp</sup>250<span style="font-size: 1.2rem">rb</span>
+</div>
+<div class="plan-period">mulai dari / layanan</div>
+          <ul class="plan-features">
+            <li>Semua fitur Standard</li>
+            <li>Servis motherboard & IC</li>
+            <li>Recovery data profesional</li>
+            <li>Servis MacBook & laptop premium</li>
+            <li>Laporan servis tertulis</li>
+            <li>Teknisi senior dedicated</li>
+          </ul>
+          <button
+            class="btn-secondary btn-full"
+            onclick="openKonsultasi('Premium')"
+          >
+            Pilih Paket
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="faq-header">
+        <div class="section-label reveal">FAQ</div>
+        <h2 class="section-title reveal">
+          Pertanyaan yang<br />Sering Ditanyakan
+        </h2>
+        <p class="section-desc reveal">
+          Tidak menemukan jawaban? Hubungi kami langsung via WhatsApp.
+        </p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Berapa lama waktu servis rata-rata?<span class="arrow">▾</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              Servis ringan seperti ganti layar, baterai, atau charging port
+              biasanya selesai dalam 1–3 jam. Servis motherboard atau recovery
+              data bisa memakan waktu 1–3 hari kerja. Kami akan memberikan
+              estimasi waktu yang akurat setelah diagnosa awal.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Apakah ada garansi setelah servis?<span class="arrow">▾</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              Ya! Setiap servis bergaransi resmi 30 hari. Jika ada masalah yang
+              sama kembali dalam masa garansi, kami perbaiki gratis tanpa
+              pertanyaan.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Apakah spare part yang digunakan original?<span class="arrow"
+              >▾</span
+            >
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              Kami menggunakan spare part original (OEM) berkualitas tinggi dari
+              distributor terpercaya. Jika tersedia part original pabrik, kami
+              informasikan beserta perbedaan harganya agar Anda bisa memilih.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Apakah data saya aman saat diservis?<span class="arrow">▾</span>
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              Privasi dan keamanan data Anda adalah prioritas kami. Teknisi
+              hanya mengakses perangkat untuk keperluan perbaikan teknis. Kami
+              menyarankan backup data sebelum servis sebagai langkah keamanan
+              tambahan.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Apakah ada layanan antar jemput perangkat?<span class="arrow"
+              >▾</span
+            >
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              Ya, tersedia layanan pickup & delivery untuk area Kota Malang
+              dengan biaya tambahan terjangkau untuk servis di atas Rp 200.000.
+              Hubungi kami via WhatsApp untuk jadwal pickup.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Apakah bisa konsultasi dulu sebelum servis?<span class="arrow"
+              >▾</span
+            >
+          </button>
+          <div class="faq-a">
+            <div class="faq-a-inner">
+              Tentu! Konsultasi dan diagnosa awal gratis. Anda bisa datang
+              langsung atau konsultasi via WhatsApp dengan mengirimkan
+              foto/video kondisi perangkat. Estimasi biaya diberikan sebelum
+              pengerjaan dimulai.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact-inner contact-center">
+        <div class="section-label reveal" style="text-align: center">
+          Hubungi Kami
+        </div>
+        <h2 class="section-title reveal" style="text-align: center">
+          Kami Siap<br /><span class="grad-text">Membantu Anda</span>
+        </h2>
+        <div class="qr-card reveal">
+          <div class="qr-header">
+            <div>
+              <h3>Scan & Chat Langsung</h3>
+              <p>Arahkan kamera ke QR untuk WhatsApp</p>
+            </div>
+            <div class="wa-dot">
+              <svg
+                viewBox="0 0 24 24"
+                style="width: 20px; height: 20px; fill: #fff"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="qr-box">
+            <div class="scan-line"></div>
+            <div class="corner c-tl"></div>
+            <div class="corner c-tr"></div>
+            <div class="corner c-bl"></div>
+            <div class="corner c-br"></div>
+            <div id="qrcode"></div>
+          </div>
+          <a
+            href="https://wa.me/6281246888582"
+            target="_blank"
+            rel="noopener"
+            class="wa-btn"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              style="width: 16px; height: 16px; fill: #fff; flex-shrink: 0"
+            >
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            Buka WhatsApp Sekarang
+          </a>
+          <p class="qr-hint">Scan QR atau klik tombol di atas</p>
+        </div>
+        <div style="margin-top: 28px; text-align: center" class="reveal">
+          <button class="btn-primary" onclick="openKonsultasi('')">
+            Buat Janji Servis
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+              <path
+                d="M3 8h10M9 4l4 4-4 4"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="logo-wrap">
+<svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="lgA" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#a78bfa"/>
+              <stop offset="50%" stop-color="#38bdf8"/>
+              <stop offset="100%" stop-color="#34d399"/>
+            </linearGradient>
+            <linearGradient id="lgB" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#a78bfa" stop-opacity=".18"/>
+              <stop offset="100%" stop-color="#38bdf8" stop-opacity=".08"/>
+            </linearGradient>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="1.5" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <!-- Hexagon bg -->
+          <path d="M24 3 L42 13.5 L42 34.5 L24 45 L6 34.5 L6 13.5 Z" fill="url(#lgB)" stroke="url(#lgA)" stroke-width="1.4"/>
+          <!-- Inner ring -->
+          <path d="M24 9 L38 17 L38 31 L24 39 L10 31 L10 17 Z" fill="none" stroke="url(#lgA)" stroke-width="0.6" opacity="0.4"/>
+          <!-- Letter L stylized -->
+          <path d="M17 14 L17 30" stroke="url(#lgA)" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+          <path d="M17 30 L31 30" stroke="url(#lgA)" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+          <!-- Accent dot -->
+          <circle cx="31" cy="17" r="3" fill="url(#lgA)" opacity="0.9"/>
+          <circle cx="31" cy="17" r="5" fill="url(#lgA)" opacity="0.15"/>
+        </svg>
+        <span class="logo-name">Lydevva</span>
+      </div>
+      <div class="footer-copy">
+        © 2025 Lydevva Service Center. Semua hak dilindungi.
+      </div>
+      <div class="footer-links">
+        <a href="#">Kebijakan Privasi</a>
+        <a href="#">Syarat Layanan</a>
+        <a href="#contact">Kontak</a>
+      </div>
+    </footer>
+
+    <!-- MODAL DETAIL LAYANAN -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+      <div class="modal-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <div id="mIcon"></div>
+        <div id="mTag"></div>
+        <h3 id="mTitle" class="modal-title"></h3>
+        <p id="mDesc" class="modal-desc"></p>
+        <div id="mFeats"></div>
+        <button
+          class="btn-primary btn-full"
+          style="
+            margin-top: 18px;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+          "
+          onclick="switchToKonsultasi()"
+        >
+          Konsultasi Sekarang
+        </button>
+      </div>
+    </div>
+
+    <!-- MODAL KONSULTASI -->
+    <div
+      class="modal-overlay"
+      id="konsultasiOverlay"
+      onclick="closeKonsultasi()"
+    >
+      <div class="modal-box konsultasi-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeKonsultasi()">✕</button>
+        <div id="kStep1">
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              margin-bottom: 6px;
+            "
+          >
+            <div
+              style="
+                width: 40px;
+                height: 40px;
+                border-radius: 11px;
+                background: rgba(167, 139, 250, 0.12);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 20px;
+                flex-shrink: 0;
+              "
+            >
+              📋
+            </div>
+            <h3 class="modal-title" style="margin-bottom: 0">
+              Formulir Konsultasi
+            </h3>
+          </div>
+          <p class="modal-desc">
+            Isi form di bawah, tim kami akan menghubungi Anda dalam waktu
+            singkat untuk konfirmasi dan estimasi biaya.
+          </p>
+          <div class="form-group">
+            <label class="form-label">Nama Lengkap *</label>
+            <input
+              type="text"
+              id="fNama"
+              class="form-input"
+              placeholder="Masukkan nama Anda"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Nomor HP / WhatsApp *</label>
+            <input
+              type="tel"
+              id="fHP"
+              class="form-input"
+              placeholder="Contoh: 08123456789"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Jenis Layanan *</label>
+            <select id="fLayanan" class="form-input form-select">
+              <option value="">-- Pilih Layanan --</option>
+              <option value="Ganti LCD & Touchscreen">
+                Ganti LCD & Touchscreen
+              </option>
+              <option value="Ganti Baterai">Ganti Baterai</option>
+              <option value="Servis Laptop">Servis Laptop</option>
+              <option value="Install Ulang & Software">
+                Install Ulang & Software
+              </option>
+              <option value="Recovery Data">Recovery Data</option>
+              <option value="Servis Kamera & Aksesoris">
+                Servis Kamera & Aksesoris
+              </option>
+              <option value="Lainnya">Lainnya</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Merek & Tipe Perangkat</label>
+            <input
+              type="text"
+              id="fPerangkat"
+              class="form-input"
+              placeholder="Contoh: iPhone 13, Samsung S24, Asus ROG"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Deskripsi Masalah *</label>
+            <textarea
+              id="fMasalah"
+              class="form-input form-textarea"
+              placeholder="Ceritakan masalah perangkat Anda secara singkat..."
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Preferensi Jadwal</label>
+            <select id="fJadwal" class="form-input form-select">
+              <option value="">-- Pilih Jadwal --</option>
+              <option value="Hari ini">Hari ini</option>
+              <option value="Besok">Besok</option>
+              <option value="2-3 hari ke depan">2–3 hari ke depan</option>
+              <option value="Minggu depan">Minggu depan</option>
+              <option value="Fleksibel">Fleksibel (hubungi saya)</option>
+            </select>
+          </div>
+          <div id="formError" class="form-error" style="display: none">
+            Harap isi semua field yang bertanda bintang (*).
+          </div>
+          <button
+            class="btn-primary btn-full"
+            style="border: none; cursor: pointer; margin-top: 8px"
+            onclick="submitKonsultasi()"
+          >
+            Kirim Konsultasi →
+          </button>
+        </div>
+        <div
+          id="kStep2"
+          style="display: none; text-align: center; padding: 20px 0"
+        >
+          <div style="font-size: 56px; margin-bottom: 16px">✅</div>
+          <h3 class="modal-title" style="margin-bottom: 10px">
+            Konsultasi Terkirim!
+          </h3>
+          <p class="modal-desc" style="margin-bottom: 24px">
+            Terima kasih, <strong id="konfirmasiNama"></strong>! Tim Lydevva
+            akan menghubungi Anda di nomor
+            <strong id="konfirmasiHP"></strong> dalam waktu maksimal
+            <strong>1 jam</strong> pada jam kerja (09.00–20.00 WIB).
+          </p>
+          <div class="ringkasan-box">
+            <div class="ringkasan-row">
+              <span class="ringkasan-label">Layanan</span>
+              <span id="ringkasanLayanan" class="ringkasan-val"></span>
+            </div>
+            <div class="ringkasan-row">
+              <span class="ringkasan-label">Perangkat</span>
+              <span id="ringkasanPerangkat" class="ringkasan-val"></span>
+            </div>
+            <div class="ringkasan-row">
+              <span class="ringkasan-label">Jadwal</span>
+              <span id="ringkasanJadwal" class="ringkasan-val"></span>
+            </div>
+          </div>
+          <a
+            href="#"
+            id="waFollowUp"
+            target="_blank"
+            rel="noopener"
+            class="wa-btn"
+            style="margin-top: 20px; text-decoration: none"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              style="width: 16px; height: 16px; fill: #fff; flex-shrink: 0"
+            >
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            Konfirmasi via WhatsApp Sekarang
+          </a>
+          <p style="font-size: 12px; color: var(--dim); margin-top: 12px">
+            Atau tunggu tim kami menghubungi Anda
+          </p>
+          <button
+            class="btn-secondary"
+            style="margin-top: 16px; cursor: pointer"
+            onclick="closeKonsultasi()"
+          >
+            Tutup
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script>
+      const cur = document.getElementById("cursor");
+      if (window.matchMedia("(pointer:fine)").matches) {
+        document.addEventListener("mousemove", (e) => {
+          cur.style.left = e.clientX + "px";
+          cur.style.top = e.clientY + "px";
+        });
+      }
+      const ham = document.getElementById("hamburger");
+      const menu = document.getElementById("navMenu");
+      const navOverlay = document.getElementById("navOverlay");
+      ham.addEventListener("click", () => {
+        const o = menu.classList.toggle("open");
+        navOverlay.classList.toggle("open", o);
+        ham.classList.toggle("active", o);
+        document.body.style.overflow = o ? "hidden" : "";
+      });
+      function closeNav() {
+        menu.classList.remove("open");
+        navOverlay.classList.remove("open");
+        ham.classList.remove("active");
+        document.body.style.overflow = "";
+      }
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e, i) => {
+            if (e.isIntersecting)
+              setTimeout(() => e.target.classList.add("visible"), i * 70);
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document.querySelectorAll(".reveal").forEach((el) => obs.observe(el));
+      function animCount(el, target) {
+        const dur = 2200,
+          start = performance.now();
+        function upd(now) {
+          const p = Math.min((now - start) / dur, 1);
+          const ease = 1 - Math.pow(1 - p, 3);
+          el.textContent =
+            Math.floor(target * ease) + (target >= 1000 ? "+" : "");
+          if (p < 1) requestAnimationFrame(upd);
+        }
+        requestAnimationFrame(upd);
+      }
+      const cObs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              animCount(e.target, parseFloat(e.target.dataset.target));
+              cObs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+      document.querySelectorAll(".stat-num").forEach((el) => cObs.observe(el));
+      function toggleFaq(btn) {
+        const item = btn.parentElement;
+        const wasActive = item.classList.contains("active");
+        document
+          .querySelectorAll(".faq-item")
+          .forEach((i) => i.classList.remove("active"));
+        if (!wasActive) item.classList.add("active");
+      }
+      (function () {
+        const c = document.getElementById("qrcode");
+        if (!c) return;
+        const size = Math.min(c.parentElement.offsetWidth - 28, 180);
+        new QRCode(c, {
+          text: "https://wa.me/6281246888582",
+          width: size < 120 ? 150 : size,
+          height: size < 120 ? 150 : size,
+          colorDark: "#000000",
+          colorLight: "#ffffff",
+          correctLevel: QRCode.CorrectLevel.H,
+        });
+      })();
+      const mData = {
+        lcd: {
+          icon: "📱",
+          color: "#a78bfa",
+          bg: "rgba(167,139,250,.1)",
+          tag: "LCD & Touchscreen",
+          title: "Ganti LCD & Touchscreen",
+          desc: "Layar HP Anda pecah, mati, atau tidak merespons sentuhan? Kami ganti dengan panel berkualitas tinggi yang sudah kami uji sebelum dipasang.",
+          feats: [
+            "Tersedia untuk 200+ model HP (iPhone, Samsung, Xiaomi, OPPO, Vivo, Realme, dll)",
+            "Panel LCD/AMOLED/OLED original atau OEM premium",
+            "Proses pemasangan maksimal 2 jam",
+            "Cek kualitas 15 titik setelah pemasangan",
+            "Garansi layar 30 hari",
+          ],
+          layanan: "Ganti LCD & Touchscreen",
+        },
+        baterai: {
+          icon: "🔋",
+          color: "#38bdf8",
+          bg: "rgba(56,189,248,.1)",
+          tag: "Ganti Baterai",
+          title: "Servis Baterai & Pengisian",
+          desc: "Baterai HP ngedrop, cepat panas saat dicas, atau HP mendadak mati? Kami pastikan penggantian aman tanpa merusak perangkat Anda.",
+          feats: [
+            "Baterai kapasitas sesuai spesifikasi original",
+            "Tersedia untuk HP dan laptop semua merek",
+            "Penggantian aman oleh teknisi berpengalaman",
+            "Cek kondisi port charging sekaligus",
+            "Garansi baterai 30 hari",
+          ],
+          layanan: "Ganti Baterai",
+        },
+        laptop: {
+          icon: "💻",
+          color: "#34d399",
+          bg: "rgba(52,211,153,.1)",
+          tag: "Servis Laptop",
+          title: "Servis & Perbaikan Laptop",
+          desc: "Laptop overheat, tidak bisa booting, keyboard rusak, atau layar bermasalah? Kami tangani semua jenis kerusakan laptop dengan teliti.",
+          feats: [
+            "Semua merek: Asus, Lenovo, HP, Dell, Acer, MacBook",
+            "Ganti thermal paste & bersihkan heatsink",
+            "Perbaikan motherboard & IC power",
+            "Upgrade RAM dan storage SSD",
+            "Garansi servis 30 hari",
+          ],
+          layanan: "Servis Laptop",
+        },
+        software: {
+          icon: "⚙️",
+          color: "#a78bfa",
+          bg: "rgba(167,139,250,.1)",
+          tag: "Software",
+          title: "Install Ulang & Perbaikan Software",
+          desc: "Perangkat lambat karena virus, OS corrupt, atau perlu upgrade? Kami bersihkan dan optimalkan software perangkat Anda.",
+          feats: [
+            "Install ulang Windows 10/11, macOS, Linux",
+            "Hapus virus, malware, dan adware menyeluruh",
+            "Setup driver dan aplikasi esensial",
+            "Aktivasi Windows dan Office original",
+            "Backup data sebelum install (opsional)",
+          ],
+          layanan: "Install Ulang & Software",
+        },
+        data: {
+          icon: "💾",
+          color: "#38bdf8",
+          bg: "rgba(56,189,248,.1)",
+          tag: "Recovery Data",
+          title: "Pemulihan Data Perangkat",
+          desc: "Kehilangan data akibat HP mati total, format tidak sengaja, atau storage rusak? Tim spesialis kami siap membantu memulihkan.",
+          feats: [
+            "Recovery dari HP, laptop, flashdisk, SD card, HDD",
+            "Tingkat keberhasilan rata-rata 85–95%",
+            "Proses aman tanpa risiko data tambah rusak",
+            "Laporan data yang berhasil dipulihkan",
+            "Harga tergantung tingkat kesulitan",
+          ],
+          layanan: "Recovery Data",
+        },
+        kamera: {
+          icon: "📷",
+          color: "#34d399",
+          bg: "rgba(52,211,153,.1)",
+          tag: "Kamera & Aksesoris",
+          title: "Servis Kamera & Komponen Lain",
+          desc: "Kamera blur, buram, atau tidak bisa terbuka? Kami juga tangani berbagai kerusakan komponen lainnya.",
+          feats: [
+            "Ganti modul kamera depan & belakang",
+            "Perbaikan charging port USB-C / Lightning",
+            "Servis speaker, mikrofon, tombol power/volume",
+            "Ganti kaca belakang HP pecah",
+            "Servis kamera digital dan action cam",
+          ],
+          layanan: "Servis Kamera & Aksesoris",
+        },
+      };
+      let currentModalLayanan = "";
+      function openModal(k) {
+        const d = mData[k];
+        if (!d) return;
+        currentModalLayanan = d.layanan;
+        document.getElementById("mIcon").innerHTML =
+          `<div style="width:50px;height:50px;border-radius:13px;background:${d.bg};display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:12px">${d.icon}</div>`;
+        document.getElementById("mTag").innerHTML =
+          `<span style="font-family:'Space Grotesk',sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:3px 12px;border-radius:50px;background:${d.bg};color:${d.color};display:inline-block;margin-bottom:10px">${d.tag}</span>`;
+        document.getElementById("mTitle").textContent = d.title;
+        document.getElementById("mDesc").textContent = d.desc;
+        document.getElementById("mFeats").innerHTML = d.feats
+          .map(
+            (f) =>
+              `<div class="modal-feat-item"><span style="color:${d.color};font-weight:700;flex-shrink:0;margin-top:1px">✓</span><span style="font-size:13px;color:#8b949e;line-height:1.6;font-family:'Plus Jakarta Sans',sans-serif">${f}</span></div>`,
+          )
+          .join("");
+        document.getElementById("modalOverlay").classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+      function closeModal() {
+        document.getElementById("modalOverlay").classList.remove("active");
+        document.body.style.overflow = "";
+      }
+      function switchToKonsultasi() {
+        closeModal();
+        setTimeout(() => openKonsultasi(currentModalLayanan), 200);
+      }
+      function openKonsultasi(paketOrLayanan) {
+        document.getElementById("kStep1").style.display = "block";
+        document.getElementById("kStep2").style.display = "none";
+        document.getElementById("formError").style.display = "none";
+        if (paketOrLayanan) {
+          const sel = document.getElementById("fLayanan");
+          for (let i = 0; i < sel.options.length; i++) {
+            if (
+              sel.options[i].value === paketOrLayanan ||
+              sel.options[i].value.includes(paketOrLayanan)
+            ) {
+              sel.selectedIndex = i;
+              break;
+            }
+          }
+        }
+        document.getElementById("konsultasiOverlay").classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+      function closeKonsultasi() {
+        document.getElementById("konsultasiOverlay").classList.remove("active");
+        document.body.style.overflow = "";
+        setTimeout(() => {
+          document.getElementById("kStep1").style.display = "block";
+          document.getElementById("kStep2").style.display = "none";
+          document.getElementById("fNama").value = "";
+          document.getElementById("fHP").value = "";
+          document.getElementById("fLayanan").selectedIndex = 0;
+          document.getElementById("fPerangkat").value = "";
+          document.getElementById("fMasalah").value = "";
+          document.getElementById("fJadwal").selectedIndex = 0;
+          document.getElementById("formError").style.display = "none";
+        }, 300);
+      }
+      function submitKonsultasi() {
+        const nama = document.getElementById("fNama").value.trim(),
+          hp = document.getElementById("fHP").value.trim(),
+          layanan = document.getElementById("fLayanan").value,
+          masalah = document.getElementById("fMasalah").value.trim(),
+          perangkat = document.getElementById("fPerangkat").value.trim(),
+          jadwal = document.getElementById("fJadwal").value;
+        if (!nama || !hp || !layanan || !masalah) {
+          document.getElementById("formError").style.display = "block";
+          return;
+        }
+        document.getElementById("formError").style.display = "none";
+        document.getElementById("konfirmasiNama").textContent = nama;
+        document.getElementById("konfirmasiHP").textContent = hp;
+        document.getElementById("ringkasanLayanan").textContent = layanan;
+        document.getElementById("ringkasanPerangkat").textContent =
+          perangkat || "—";
+        document.getElementById("ringkasanJadwal").textContent =
+          jadwal || "Fleksibel";
+        const msg = `Halo Lydevva! Saya ingin konsultasi servis.%0ANama: ${encodeURIComponent(nama)}%0AHP: ${hp}%0ALayanan: ${encodeURIComponent(layanan)}%0APerangkat: ${encodeURIComponent(perangkat || "—")}%0AMasalah: ${encodeURIComponent(masalah)}%0AJadwal: ${encodeURIComponent(jadwal || "Fleksibel")}`;
+        document.getElementById("waFollowUp").href =
+          `https://wa.me/6281246888582?text=${msg}`;
+        document.getElementById("kStep1").style.display = "none";
+        document.getElementById("kStep2").style.display = "block";
+      }
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeModal();
+          closeKonsultasi();
+        }
+      });
+    </script>
+  </body>
+</html>
